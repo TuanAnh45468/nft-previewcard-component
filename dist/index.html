@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- displays site properly based on user's device -->
 
-  <link href="images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="output.css" rel="stylesheet">
-  <title>Frontend Mentor | NFT preview card component</title>
-  
-</head>
-<body>
-  Equilibrium #3429
+    <link
+      href="images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="flex flex-col min-h-screen items-center justify-center bg-dark-blue-main">
+    <main class="mobile:w-[335px] bg-dark-blue-card flex flex-col gap-y-5 px-5 py-5 rounded-2xl">
+      <img alt="" class="w-[295px] h-[295px] rounded-2xl" src="images/image-equilibrium.jpg" />
 
-  Our Equilibrium collection promotes balance and calm.
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+        <span class="text-white font-bold text-2xl">Equilibrium #3429</span>
+        <p class="text-soft-blue">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
 
-</body>
+        <div class="flex">
+          <div class="flex justify-center items-center gap-x-2">
+            <img alt="" class="inline-block" src="images/icon-ethereum.svg" />
+            <span class="font-bold text-cyan">0.041 ETH</span>
+          </div>
+
+          <div class="ml-auto flex justify-center items-center gap-x-2">
+            <img alt="" class="inline-block" src="images/icon-clock.svg" />
+            <span class="text-soft-blue">3 days left</span>
+          </div>
+        </div>
+
+      <hr>
+      <div class="flex items-center justify-start gap-x-2">
+        <img alt="" class="inline-block w-[44px] h-[44px] border border-white rounded-full" src="images/image-avatar.png" />
+        <p class=""> <span class="text-soft-blue">Creation of</span> <span class="text-white">Jules Wyvern</span></p>
+      </div>
+    </main>
+  </body>
 </html>
